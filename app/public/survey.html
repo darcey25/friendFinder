@@ -1,0 +1,218 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+      .question {width: 200px;}
+      body {font-size: 24px;}
+
+    </style>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Your Match</h4>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="max-width: 960px;">
+      <h1 style="text-align: center;">Survey Questions</h1>
+      <hr>
+      <form>
+        <div class="form-group">
+          <label for="userName">Name - required</label>
+          <input type="email" class="form-control" id="userName" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label for="userPhoto">photo - required</label>
+          <input type="email" class="form-control" id="userPhoto" placeholder="photo url">
+        </div>
+        <hr>
+        <div >
+          <div class="form-group">
+            <label for="q1">Cats are better than dogs!</label>
+            <select class="form-control question" id="q1">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q2">Tacos tuesdays is a must!</label>
+            <select class="form-control question"  id="q2">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q3">Any day is margarita day!</label>
+            <select class="form-control question" id="q3">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q4">A glass of wine a day keeps the doctor away!</label>
+            <select class="form-control question" id="q4">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q5">Winter is better than summer!</label>
+            <select class="form-control question" id="q5">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q6">Going out is better than a relaxing night at home!</label>
+            <select class="form-control question" id="q6">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q7">Biking is fun!</label>
+            <select class="form-control question" id="q7">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q8">Mountains are better than the beach!</label>
+            <select class="form-control question" id="q8">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q9">Scuba diving is awesome!</label>
+            <select class="form-control question" id="q9">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q10">Traveling the world is a must!</label>
+            <select class="form-control question" id="q10">
+              <option disabled selected>Select an option</option>
+              <option value="1">1 (Strongly Agree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Disagree)</option>
+            </select>
+          </div>
+        </div>
+      </form> 
+      <button type="button" class="submit btn btn-lg btn-primary btn-block"><span class="glyphicon glyphicon-ok"></span> Take Survey</button>
+      <footer class="footer" style="margin-top: 30px;">
+        <div class="container">
+          <p style="text-align: center;"><a href="/api/friends">Friends API</a> | <a href="https://github.com/darcey25/friendFinder"><i class="fab fa-github fa-1x"></i></a></p>
+        </div>
+      </footer>
+    </div> 
+  </body>
+  </html>
+
+  <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+  <script type="text/javascript">
+
+      // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+      // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+      // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+      // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+      $(".submit").on("click", function(event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newUser = {
+          "name": $("#userName").val().trim(),
+          "photo": $("#userPhoto").val().trim(),
+          "scores": [
+            $("#q1").val().trim(),
+            $("#q2").val().trim(),
+            $("#q3").val().trim(),
+            $("#q4").val().trim(),
+            $("#q5").val().trim(),
+            $("#q6").val().trim(),
+            $("#q7").val().trim(),
+            $("#q8").val().trim(),
+            $("#q9").val().trim(),
+            $("#q10").val().trim()
+          ]
+        };
+
+        console.log(newUser);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/friends", newUser, function(match) {
+            console.log(match);
+            $(".modal-body").html("<h1>" + match.name + "</h1><img src='" + match.photo + "' alt='Match photo' style='width: 500px;'>");
+            $("#myModal").modal("show");
+
+          });
+
+      });
+
+  </script>
+
