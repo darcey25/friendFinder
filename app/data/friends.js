@@ -10,7 +10,7 @@ var friendsList = [
 		"scores": [1, 3, 1, 3, 3, 1, 5, 5, 1, 1]
 	},
 	{
-		"name": "",
+		"name": "Donald Trump",
 		"photo": "https://assets.rbl.ms/14950438/980x.jpg",
 		"scores": [5, 5, 5, 5, 5, 1, 5, 5, 5, 5]
 	}
