@@ -18,10 +18,11 @@
   },
   "homepage": "https://github.com/darcey25/friendFinder#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "path": "^0.12.7"
+    "express": "^5.2.1"
   },
   "devDependencies": {},
-  "keywords": []
+  "keywords": [],
+  "engines": {
+    "node": ">=18"
+  }
 }
